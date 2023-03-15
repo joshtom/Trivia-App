@@ -1,4 +1,5 @@
 import "./App.css";
+import "./styles/styles.scss";
 import { RouterProvider } from "react-router-dom";
 import routes from "./routes/routes";
 

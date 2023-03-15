@@ -1,0 +1,47 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+
+  &__topLeft {
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    transform: rotate(45deg);
+    opacity: 0.1;
+    top: -15vmin;
+    left: -15vmin;
+    min-width: 75vmin;
+    min-height: 75vmin;
+  }
+
+  &__bottomRight {
+    position: fixed;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.1;
+    min-width: 75vmin;
+    min-height: 75vmin;
+    bottom: -15vmin;
+    right: -15vmin;
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-family: "Slackey", cursive;
+  }
+
+  &__button {
+    margin-top: 0.6rem;
+    width: 100%;
+    display: flex;
+    & > * {
+      width: 100%;
+    }
+  }
+}

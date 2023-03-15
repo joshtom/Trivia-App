@@ -11,7 +11,7 @@ import axios, { AxiosRequestConfig } from "axios";
 axios.interceptors.request.use((config) => {
   const updatedConfig = { ...config };
   updatedConfig.baseURL = process.env.REACT_APP_API_URL;
-  console.log("The updated config", process.env.REACT_APP_API_URL);
+  //   console.log("The updated config", process.env.REACT_APP_API_URL);
   return updatedConfig;
 });
 

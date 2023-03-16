@@ -1,15 +1,19 @@
 .input-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
 
   input {
     padding: 17px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--grayDark);
     border-radius: 4px;
     font-size: 16px;
-    margin-top: 8px;
-    text-align: center;
-    font-weight: bold;
+    // text-align: center;
+    font-weight: light;
+    &::placeholder {
+      color: var(--grayDark);
+    }
   }
 
   label {

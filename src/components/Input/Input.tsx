@@ -10,6 +10,7 @@ interface InputProps {
 const Input: React.FC<InputProps> = ({ label, handleInputChange, value }) => {
   return (
     <div className={Style["input-container"]}>
+      <label htmlFor={label}>{label}</label>
       <input
         type="text"
         id={label}

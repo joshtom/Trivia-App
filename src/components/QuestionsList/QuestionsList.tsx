@@ -68,9 +68,6 @@ const QuestionsList = ({ questions }: Props) => {
   const handleQuizFinish = () => setShowScore(true);
 
   const handleNextQuestion = () => {
-    // if (currentQuestionIndex + 1 < questions.length) {
-    //   setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
-    // }
     if (selectedAnswer) {
       setAnswers((prevAnswers) => [...prevAnswers, selectedAnswer]);
       setSelectedAnswer(null);

@@ -9,13 +9,13 @@ describe("Input component", () => {
     render(
       <Input
         label="Username"
-        value="john"
+        value="josh"
         handleInputChange={handleInputChange}
       />
     );
     const input = screen.getByPlaceholderText("Username") as HTMLInputElement;
-    fireEvent.change(input, { target: { value: "john" } });
-    expect(input.value).toBe("john");
+    fireEvent.change(input, { target: { value: "josh" } });
+    expect(input.value).toBe("josh");
     expect(handleInputChange).toHaveBeenCalledTimes(0);
   });
 });

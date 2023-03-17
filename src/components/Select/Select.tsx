@@ -2,6 +2,7 @@ import Style from "./Select.module.scss";
 import { SelectProps } from "../../utils/interface";
 
 const Select: React.FC<SelectProps> = ({
+  id,
   options,
   label,
   handleSelectChange,
@@ -9,8 +10,11 @@ const Select: React.FC<SelectProps> = ({
 }) => {
   return (
     <div className={Style["select-container"]}>
-      <label htmlFor="select">{label}</label>
+      <label htmlFor={id} aria-labelledby={id}>
+        {label}
+      </label>
       <select
+        id={id}
         value={value}
         onChange={handleSelectChange}
         className={Style["select-container__select"]}

@@ -33,7 +33,17 @@ export interface SelectProps {
   options: Option[];
   label?: string;
   //   onChange?: (value: Option) => void;
-  handleSelectChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+  handleSelectChange?: (event: React.ChangeEvent<HTMLSelectElement>) => void;
   id: string;
-  value: any;
+  value?: any;
+}
+
+export interface QuizDifficulty {
+  value: string;
+  label: string;
+}
+
+export interface QuizNumber {
+  value: string;
+  label: string;
 }

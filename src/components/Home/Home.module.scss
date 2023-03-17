@@ -9,9 +9,21 @@
 
   &__formWrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
+
+    @media screen and (max-width: 768px) {
+      section {
+        width: 100%;
+      }
+      &--input {
+        input {
+          width: 100%;
+        }
+      }
+    }
   }
 
   h1 {

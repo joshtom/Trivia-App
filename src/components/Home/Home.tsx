@@ -86,13 +86,15 @@ const Home = () => {
         <form onSubmit={handleOnSubmit}>
           <Card>
             <div className={Style["container__formWrapper"]}>
-              <Input
-                label="Nickname"
-                value={state.username}
-                handleInputChange={(e) => {
-                  setState({ ...state, username: e.target.value });
-                }}
-              />
+              <section className={Style["container__formWrapper--input"]}>
+                <Input
+                  label="Nickname"
+                  value={state.username}
+                  handleInputChange={(e) => {
+                    setState({ ...state, username: e.target.value });
+                  }}
+                />
+              </section>
 
               <section>
                 <Select

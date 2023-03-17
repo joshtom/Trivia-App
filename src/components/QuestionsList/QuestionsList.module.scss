@@ -9,6 +9,10 @@
     width: 30%;
     text-align: center;
     line-height: 1.4;
+
+    @media screen and (max-width: 768px) {
+      width: 90%;
+    }
   }
   &--answers input[type="radio"] {
     display: none;
@@ -16,17 +20,16 @@
 
   &--answers {
     display: flex;
-    // background-color: red;
     justify-content: center;
     align-items: center;
     gap: 20px;
     label {
       position: relative;
       padding: 10px;
-      //   margin-bottom: 1rem;
       cursor: pointer;
       border: 1px solid var(--secondary);
       border-radius: 4px;
+
       &.selected {
         border-color: var(--grayDark);
       }
@@ -34,6 +37,7 @@
   }
   &--footer {
     margin-top: 20px;
+    flex-wrap: wrap;
 
     button {
       margin-right: 10px;
